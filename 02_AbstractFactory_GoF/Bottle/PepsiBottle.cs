@@ -6,7 +6,7 @@ namespace _02_AbstractFactory_GoF
     {
         public override void Interact(AbstractWater water)
         {
-            Console.WriteLine(this + " interact " + water);
+            Console.WriteLine(GetType().Name + " interact " + water.GetType().Name);
         }
     }
 }
