@@ -9,7 +9,7 @@ namespace _01_Prototype
         public DateTime StartDateTime { get; set; }
 
         public override CalendarProptotype Clone()
-        {            
+        {
             var copy = (CalendarEvent)base.Clone();
 
             // це дозволить нам мати список із посиланнями на тих же відвідувачів            
@@ -19,6 +19,8 @@ namespace _01_Prototype
             //copy.Attendees = copiedAttendees; 
             // Також скопіюємо приоритет
             //. ....
+            copy.Priority = Priority.Clone();
+
             return copy;
         }
     }

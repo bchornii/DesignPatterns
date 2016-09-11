@@ -1,13 +1,13 @@
 ﻿namespace _01_FactoryMethod
 {
-    abstract class LoggerProvider
+    public abstract class LoggerProvider
     {
         ILogger logger;
         public LoggerProvider()
         {
             logger = GetLogger();            
         }
-        public void Log()
+        public virtual void Log()
         {
             logger.LogMessage("hello from provider");
         }

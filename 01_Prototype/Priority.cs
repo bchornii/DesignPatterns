@@ -1,6 +1,8 @@
-﻿namespace _01_Prototype
+﻿using System;
+
+namespace _01_Prototype
 {
-    class Priority
+    class Priority : IClonable<Priority>
     {
         private int priority = -1;
         
@@ -14,6 +16,16 @@
         {
             priority = 2;
             return this;
+        }
+
+        public Priority Clone()
+        {
+            return MemberwiseClone() as Priority;
+        }
+
+        object ICloneable.Clone()
+        {
+            return (this as IClonable<Priority>).Clone();
         }
 
         public int Prior

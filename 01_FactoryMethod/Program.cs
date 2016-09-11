@@ -6,10 +6,16 @@ namespace _01_FactoryMethod
     {
         static void Main(string[] args)
         {
-            LoggerProvider provider = new LoggerCustomProvider();
+            var logProvider = GetProviderConfig();
+            LoggerProvider provider = LoggingProviderFactory.GetLoggingProvider(logProvider);
             provider.Log();
 
             Console.ReadLine();
+        }
+
+        static LoggingProviders GetProviderConfig()
+        {
+            return LoggingProviders.Log4Net;
         }
     }
 }

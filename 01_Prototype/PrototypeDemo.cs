@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Prototype
 {
@@ -11,7 +7,7 @@ namespace _01_Prototype
         public static CalendarEvent GetExistingEvent()
         {
             var beerParty = new CalendarEvent();
-            var friends = new Attendee[1];
+            var friends = new Attendee[2];
 
             var andriy = new Attendee { FirstName = "Andriy", LastName = "Buday", Email = "andriybuday@liamg.com" };
 
@@ -31,7 +27,9 @@ namespace _01_Prototype
             nextFridayEvent.StartDateTime = new DateTime(2010, 7, 30, 19, 0, 0);
 
             nextFridayEvent.Attendees[0].Email = "andriybuday@liamg.com";
-            nextFridayEvent.Priority = beerParty.Priority.Low();
+            nextFridayEvent.Priority.Low();
+
+            nextFridayEvent.Attendees[1] = new Attendee { Email = "dfdf", FirstName = "vd", LastName = "dh" };
 
             if (beerParty.Attendees != nextFridayEvent.Attendees)
             {
