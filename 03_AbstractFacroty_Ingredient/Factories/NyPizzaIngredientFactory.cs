@@ -1,0 +1,32 @@
+﻿using _03_AbstractFacroty_Ingredient.Products.NY;
+
+namespace _03_AbstractFacroty_Ingredient
+{
+    public class NyPizzaIngredientFactory : IPizzaIngredientFactory
+    {
+        public Dough CreateDough()
+        {
+            return new ThinCrustDough();
+        }
+
+        public Sauce CreateSauce()
+        {
+            return new MarinaraSauce();
+        }
+
+        public Cheese CreateCheese()
+        {
+            return new ReggianoCheese();
+        }
+
+        public Veggies[] CreateVeggies()
+        {
+            return new Veggies[] { new Garlic(), new Onion(), new Mushrooms() };
+        }
+
+        public Pepperoni CreatePepperoni()
+        {
+            return new SlicedPepperoni();
+        }
+    }
+}
