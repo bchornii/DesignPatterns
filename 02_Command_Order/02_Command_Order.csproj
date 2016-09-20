@@ -53,6 +53,11 @@
     <Compile Include="ICommand.cs" />
     <Compile Include="Light\Light.cs" />
     <Compile Include="Light\LightCommand.cs" />
+    <Compile Include="Light\Radio.cs" />
+    <Compile Include="Light\RadioOnCommand.cs" />
+    <Compile Include="Light\Tv.cs" />
+    <Compile Include="Light\TvOnCommand.cs" />
+    <Compile Include="MacroCommand.cs" />
     <Compile Include="NoCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

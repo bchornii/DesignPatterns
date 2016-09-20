@@ -40,7 +40,7 @@ namespace _02_Command_Order
         public void SetCustom(Speed speed)
         {
             FanSpeed = speed;
-            InfoMessage(FanSpeed.ToString());
+            InfoMessage("Undo to : " + FanSpeed.ToString());
         }
 
         private static void InfoMessage(string message)
