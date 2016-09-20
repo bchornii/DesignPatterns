@@ -53,10 +53,10 @@
     <Compile Include="ICommand.cs" />
     <Compile Include="Light\Light.cs" />
     <Compile Include="Light\LightCommand.cs" />
-    <Compile Include="Light\Radio.cs" />
-    <Compile Include="Light\RadioOnCommand.cs" />
-    <Compile Include="Light\Tv.cs" />
-    <Compile Include="Light\TvOnCommand.cs" />
+    <Compile Include="Radio\Radio.cs" />
+    <Compile Include="Radio\RadioOnCommand.cs" />
+    <Compile Include="Tv\Tv.cs" />
+    <Compile Include="Tv\TvOnCommand.cs" />
     <Compile Include="MacroCommand.cs" />
     <Compile Include="NoCommand.cs" />
     <Compile Include="Program.cs" />
