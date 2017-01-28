@@ -2,9 +2,9 @@
 
 namespace _01_FactoryMethod
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var logProvider = GetProviderConfig();
             LoggerProvider provider = LoggingProviderFactory.GetLoggingProvider(logProvider);
