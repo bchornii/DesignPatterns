@@ -2,19 +2,20 @@
 {
     public class LaptopBuyer
     {
-        private LaptopBuilder _laptopBuilder;
-        public void SetLaptopBuilder(LaptopBuilder builder)
+        private readonly LaptopBuilder _laptopBuilder;
+
+        public LaptopBuyer(LaptopBuilder laptopBuilder)
         {
-            _laptopBuilder = builder;
+            _laptopBuilder = laptopBuilder;
         }
-        public Laptop ConstructLaptop()
+
+        public void ConstructLaptop()
         {
             _laptopBuilder.SetMonitorResolution();
             _laptopBuilder.SetProcessor();
             _laptopBuilder.SetMemory();
-            _laptopBuilder.SetHDD();
-            _laptopBuilder.SetBattery();
-            return _laptopBuilder.GetLaptop();
+            _laptopBuilder.SetHdd();
+            _laptopBuilder.SetBattery();            
         }
     }
 }

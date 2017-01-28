@@ -2,15 +2,15 @@
 
 namespace _01_Builder
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            var tripBuilder = new TripLaptopBuilder();
-            var gamerBuilder = new GamingLaptopBuilder();
-            var buyer = new LaptopBuyer();
-            buyer.SetLaptopBuilder(tripBuilder);
-            Laptop laptop = buyer.ConstructLaptop();
+            var builder = new TripLaptopBuilder();
+            //var builder = new GamingLaptopBuilder();
+            var buyer = new LaptopBuyer(builder);            
+            buyer.ConstructLaptop();
+            var laptop = builder.GetLaptop();
 
             Console.WriteLine(laptop.ToString());
             Console.Read();

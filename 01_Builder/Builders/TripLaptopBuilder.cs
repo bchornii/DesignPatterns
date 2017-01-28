@@ -7,7 +7,7 @@
             Laptop.Battery = "6 lbs";
         }
 
-        public override void SetHDD()
+        public override void SetHdd()
         {
             Laptop.HDD = "500 Gb";
         }

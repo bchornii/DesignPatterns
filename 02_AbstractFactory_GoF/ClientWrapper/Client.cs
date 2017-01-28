@@ -2,21 +2,21 @@
 {
     class Client
     {
-        private AbstractWater water;
-        private AbstractBottle bottle;
-        private AbstractCover cover;
+        private readonly AbstractWater _water;
+        private readonly AbstractBottle _bottle;
+        private readonly AbstractCover _cover;
 
         public Client(AbstractFactory factory)
         {
-            water = factory.CreateWater();
-            bottle = factory.CreateBottle();
-            cover = factory.CreateCover();
+            _water = factory.CreateWater();
+            _bottle = factory.CreateBottle();
+            _cover = factory.CreateCover();
         }
 
         public void Interact()
         {
-            bottle.Interact(water);
-            cover.Interact(bottle);
+            _bottle.Interact(_water);
+            _cover.Interact(_bottle);
         }
     }
 }
