@@ -3,7 +3,8 @@
     public abstract class AnimalToy
     {
         public string Name { get; set; }
-        public AnimalToy(string name)
+
+        protected AnimalToy(string name)
         {
             Name = name;
         }

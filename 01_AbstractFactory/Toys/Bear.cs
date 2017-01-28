@@ -2,7 +2,7 @@
 {
     public abstract class Bear : AnimalToy
     {
-        public Bear(string name) : base(name)
+        protected Bear(string name) : base(name)
         {
 
         }
