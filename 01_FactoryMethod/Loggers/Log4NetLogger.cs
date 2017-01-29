@@ -2,7 +2,7 @@
 
 namespace _01_FactoryMethod
 {
-    class Log4NetLogger : ILogger
+    public class Log4NetLogger : ILogger
     {
         public void LogError(string message)
         {
@@ -11,7 +11,7 @@ namespace _01_FactoryMethod
 
         public void LogMessage(string message)
         {
-            Console.WriteLine(string.Format("{0}: {1}", "Log4Net", message));
+            Console.WriteLine($"Log4Net: {message}");
         }
 
         public void LogVerboseInformation(string message)

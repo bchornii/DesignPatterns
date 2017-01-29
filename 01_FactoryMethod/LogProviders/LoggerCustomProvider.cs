@@ -1,6 +1,6 @@
 ﻿namespace _01_FactoryMethod
 {
-    class LoggerCustomProvider : LoggerProvider
+    public class LoggerCustomProvider : LoggerProvider
     {
         public override ILogger GetLogger()
         {

@@ -2,7 +2,7 @@
 
 namespace _01_FactoryMethod
 {
-    class Logger4NetProvider : LoggerProvider
+    public class Logger4NetProvider : LoggerProvider
     {
         public override void Log()
         {
