@@ -2,19 +2,19 @@
 
 namespace _01_Prototype
 {
-    class Priority : IClonable<Priority>
+    public class Priority : IClonable<Priority>
     {
-        private int priority = -1;
-        
+        public int Prior { get; private set; } = -1;
+
         public Priority Hight()
         {
-            priority = 1;
+            Prior = 1;
             return this;
         }       
 
         public Priority Low()
         {
-            priority = 2;
+            Prior = 2;
             return this;
         }
 
@@ -26,11 +26,6 @@ namespace _01_Prototype
         object ICloneable.Clone()
         {
             return (this as IClonable<Priority>).Clone();
-        }
-
-        public int Prior
-        {
-            get { return priority; }
         }
     }
 }
