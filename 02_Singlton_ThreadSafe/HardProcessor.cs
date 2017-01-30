@@ -1,6 +1,6 @@
 ﻿namespace _02_Singlton_ThreadSafe
 {
-    class HardProcessor
+    public class HardProcessor
     {
         private int _start;
         public HardProcessor(int start)
@@ -11,8 +11,8 @@
 
         public int ProcessTo(int end)
         {
-            int sum = 0;
-            for (int i = 0; i < end; i++)
+            var sum = 0;
+            for (var i = 0; i < end; i++)
             {
                 sum += i;
             }
