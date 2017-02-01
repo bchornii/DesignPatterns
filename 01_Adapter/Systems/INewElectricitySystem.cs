@@ -1,7 +1,7 @@
 ﻿namespace _01_Adapter
 {
     // Широковикористовуваний інтерфейс нової квартири
-    interface INewElectricitySystem
+    public interface INewElectricitySystem
     {
         string MathWideSocket();
     }
