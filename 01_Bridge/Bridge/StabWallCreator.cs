@@ -2,7 +2,7 @@
 
 namespace _01_Bridge
 {
-    class StabWallCreator : IWallCreator
+    public class StabWallCreator : IWallCreator
     {
         public void BuildingWall()
         {

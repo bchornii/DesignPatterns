@@ -1,6 +1,6 @@
 ﻿namespace _01_Bridge
 {
-    interface IWallCreator
+    public interface IWallCreator
     {
         void BuildingWallWithDoor();
         void BuildingWall();
