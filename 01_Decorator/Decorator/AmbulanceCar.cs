@@ -2,7 +2,7 @@
 
 namespace _01_Decorator
 {
-    class AmbulanceCar : DecoratorCar
+    public class AmbulanceCar : DecoratorCar
     {
         public AmbulanceCar(Car decoratedCar) 
             : base(decoratedCar)

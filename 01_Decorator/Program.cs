@@ -2,9 +2,9 @@
 
 namespace _01_Decorator
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var doctorDream = new AmbulanceCar(new TurboCar(new Mercedes()));
             doctorDream.Go();

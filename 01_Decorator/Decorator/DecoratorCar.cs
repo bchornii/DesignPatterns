@@ -1,6 +1,6 @@
 ﻿namespace _01_Decorator
 {
-    class DecoratorCar : Car
+    public class DecoratorCar : Car
     {
         protected Car DecoratedCar { get; set; }
         public DecoratorCar(Car decoratedCar)
