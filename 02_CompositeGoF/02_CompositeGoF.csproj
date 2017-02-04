@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BranchLeafInterface\IBranchComponent.cs" />
-    <Compile Include="BranchLeafInterface\IComponent.cs" />
-    <Compile Include="BranchLeafInterface\ILeafComponent.cs" />
-    <Compile Include="Branch\Component.cs" />
+    <Compile Include="Component\IComponent.cs" />
+    <Compile Include="Composite\Composite.cs" />
     <Compile Include="Leaf\CustomerComponent.cs" />
     <Compile Include="Leaf\OrderComponent.cs" />
     <Compile Include="Program.cs" />

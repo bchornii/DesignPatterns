@@ -1,13 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace _02_CompositeGoF
 {
-    class Component : IBranchComponent
+    public class Composite : IComponent
     {
         public string Name { get; set; }
-        public List<IComponent> Components { get; private set; }
-        public Component(string name)
+        public IList<IComponent> Components { get; }
+        public Composite(string name)
         {
             Name = name;
             Components = new List<IComponent>();
@@ -18,14 +19,16 @@ namespace _02_CompositeGoF
         }
 
         public string GatherData()
-        {            
-            StringBuilder sb = new StringBuilder();
-            sb.Append(string.Format("<{0}>", Name));
+        {
+            var sb = new StringBuilder();
+            sb.Append($"<{Name}>");
+            sb.Append(Environment.NewLine);
             foreach (var component in Components)
             {
                 sb.Append(component.GatherData());
+                sb.Append(Environment.NewLine);
             }
-            sb.Append(string.Format("</{0}>", Name));
+            sb.Append($"</{Name}>");
             return sb.ToString();
         }
 

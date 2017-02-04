@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace _02_CompositeGoF
 {
-    class OrderComponent : ILeafComponent
+    public class OrderComponent : IComponent
     {
-        private int OrderId { get; set; }
-        List<string> orders = new List<string>();
+        private int OrderId { get; }
+        private readonly List<string> _orders = new List<string>();
         public OrderComponent(int id)
         {
             OrderId = id <= 3 ? id : 3;
@@ -13,17 +14,32 @@ namespace _02_CompositeGoF
         }
         public string GatherData()
         {
-            return string.Format("<Order>{0}</Order>", orders[OrderId]);
+            return $"<Order>{_orders[OrderId]}</Order>";
         }
         private void InitDb()
         {
-            orders.AddRange(new List<string>
+            _orders.AddRange(new List<string>
             {
                 "Bread",
                 "Milk",
                 "Water",
                 "Juice"
             });
+        }
+
+        public void Add(IComponent component)
+        {
+            throw new InvalidOperationException();
+        }
+
+        public void Remove(IComponent component)
+        {
+            throw new InvalidOperationException();
+        }
+
+        public IComponent GetChild(int index)
+        {
+            throw new InvalidOperationException();
         }
     }
 }

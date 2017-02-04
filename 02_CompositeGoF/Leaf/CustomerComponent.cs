@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace _02_CompositeGoF
 {
-    class CustomerComponent : ILeafComponent
+    public class CustomerComponent : IComponent
     {
-        private int CustomerId { get; set; }
-        private List<string> data = new List<string>();
+        private int CustomerId { get; }
+        private readonly List<string> _data = new List<string>();
         public CustomerComponent(int id)
         {
             CustomerId = id <= 3 ? id : 3;
@@ -13,18 +14,33 @@ namespace _02_CompositeGoF
         }
         public string GatherData()
         {
-            return string.Format("<Customer>{0}</Customer>", data[CustomerId]);
+            return $"<Customer>{_data[CustomerId]}</Customer>";
         }
 
         private void InitDb()
         {
-            data.AddRange(new List<string>
+            _data.AddRange(new List<string>
             {
                 "Andriy Buday",
                 "Ivan Petrov",
                 "Oleg Ivanov",
                 "Andtiy Valuev"
             });
+        }
+
+        public void Add(IComponent component)
+        {
+            throw new InvalidOperationException();
+        }
+
+        public void Remove(IComponent component)
+        {
+            throw new InvalidOperationException();
+        }
+
+        public IComponent GetChild(int index)
+        {
+            throw new InvalidOperationException();
         }
     }
 }
