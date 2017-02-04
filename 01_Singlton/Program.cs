@@ -2,9 +2,9 @@
 
 namespace _01_Singlton
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             DoHardWork();
 
@@ -13,8 +13,8 @@ namespace _01_Singlton
 
         static void DoHardWork()
         {
-            Logger logger = Logger.Instance;
-            HardProcessor processor = new HardProcessor(1);
+            var logger = Logger.Instance;
+            var processor = new HardProcessor(1);
             logger.Log("Hard work started...");
             processor.ProcessTo(5);
             logger.Log("Hard work finished...");

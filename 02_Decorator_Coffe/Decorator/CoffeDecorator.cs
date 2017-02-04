@@ -1,15 +1,15 @@
 ﻿namespace _02_Decorator_Coffe
 {
-    class CoffeDecorator : Coffe
+    public class CoffeDecorator : Coffe
     {
-        protected Coffe decorate;
-        public CoffeDecorator(Coffe _decorate)
+        protected Coffe CoffeComponent;
+        public CoffeDecorator(Coffe coffeComponent)
         {
-            decorate = _decorate;
+            CoffeComponent = coffeComponent;
         }
         public override void Make()
         {
-            decorate.Make();
+            CoffeComponent.Make();
         }
     }
 }

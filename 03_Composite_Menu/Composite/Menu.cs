@@ -5,9 +5,9 @@ namespace _03_Composite_Menu
 {
     public class Menu : IMenuComposite
     {
-        private readonly List<IMenuComponent> _menuComponents = new List<IMenuComponent>();
         private readonly string _name;
         private readonly string _description;
+        private readonly IList<IMenuComponent> _menuComponents = new List<IMenuComponent>();
         public Menu(string name, string description)
         {
             _name = name;
@@ -33,12 +33,12 @@ namespace _03_Composite_Menu
         public string GetDescription() => _description;
         public double GetPrice()
         {
-            throw new NotImplementedException();
+            throw new InvalidOperationException();
         }
 
         public bool IsVegeterian()
         {
-            throw new NotImplementedException();
+            throw new InvalidOperationException();
         }
 
         public void Print()

@@ -1,19 +1,19 @@
-﻿namespace _01_FactoryMethod
+﻿using System;
+using System.Collections.Generic;
+
+namespace _01_FactoryMethod
 {
-    public class LoggingProviderFactory
+    public class LogProviderFactory
     {
-        public static LoggerProvider GetLoggingProvider(LoggingProviders provider)
+        private static readonly IDictionary<Type, LoggerProvider> _loggers = new Dictionary<Type, LoggerProvider>
         {
-            switch (provider)
-            {
-                case LoggingProviders.CustomLog:
-                    return new LoggerCustomProvider();
-                case LoggingProviders.Log4Net:
-                    return new Logger4NetProvider();
-                default:
-                    return new Logger4NetProvider();
-            }
-            
+            [typeof(Logger4NetProvider)] = new Logger4NetProvider(),
+            [typeof(LoggerCustomProvider)] = new LoggerCustomProvider()
+        };
+
+        public static LoggerProvider GetLoggingProvider<T>() where T : LoggerProvider
+        {
+            return _loggers[typeof(T)];
         }
     }
 }

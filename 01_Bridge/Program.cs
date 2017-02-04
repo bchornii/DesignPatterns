@@ -1,29 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Bridge
 {
-    class Program
+    public enum WallCreatorType
     {
-        static void Main(string[] args)
-        {
-            var brickWallCreator = new BrickWallCreator();
-            var stabWallCreator = new StabWallCreator();
+        Brick,
+        Stab
+    }
+    public static class Config
+    {
+        public static WallCreatorType WallCreator { get; set; } = WallCreatorType.Brick;
+    }
 
+    internal class Program
+    {
+        private static void Main()
+        {
+            Config.WallCreator = WallCreatorType.Brick;
             var buildingCompany = new BuildingCompany();
 
             // збудувати основу
             buildingCompany.BuildingFondation();
 
             // збудувати стіни з плит
-            buildingCompany.WallCreator = brickWallCreator;
             buildingCompany.BuildingRoom();
 
             // збудувати стіни з цегли
-            buildingCompany.WallCreator = stabWallCreator;
             buildingCompany.BuildingRoom();
             buildingCompany.BuildingRoom();
 

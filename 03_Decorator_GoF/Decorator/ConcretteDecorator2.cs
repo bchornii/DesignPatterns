@@ -2,9 +2,9 @@
 
 namespace _03_Decorator_GoF
 {
-    class ConcretteDecorator2 : Decorator
+    public class ConcretteDecorator2 : Decorator
     {
-        void AddBehaviour()
+        private static void AddBehaviour()
         {
             Console.WriteLine("Behaviour");
         }

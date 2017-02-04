@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Adapter
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             // 1. Ми можемо користуватися новою системою без проблем
             var newElectricitySystem = new NewElectricitySystem();
@@ -16,7 +12,7 @@ namespace _01_Adapter
 
             // 2. Для старої системи ми використовуємо адаптер
             var oldElectricitySystem = new OldElectricitySystem();
-            Adapter adapter = new Adapter(oldElectricitySystem);
+            var adapter = new Adapter(oldElectricitySystem);
             ElectricityConsumer.ChargeNotebook(adapter);
 
             Console.ReadLine();

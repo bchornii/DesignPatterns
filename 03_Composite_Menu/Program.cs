@@ -1,5 +1,10 @@
 ﻿using System;
 
+
+/* 
+ * In this project we have Composite pattern example which implemented
+ * with opt to safety rather than transparency.
+ */
 namespace _03_Composite_Menu
 {
     internal class Program

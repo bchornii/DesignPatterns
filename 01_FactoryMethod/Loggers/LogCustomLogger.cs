@@ -2,7 +2,7 @@
 
 namespace _01_FactoryMethod
 {
-    class LogCustomLogger : ILogger
+    public class LogCustomLogger : ILogger
     {
         public void LogError(string message)
         {
@@ -11,7 +11,7 @@ namespace _01_FactoryMethod
 
         public void LogMessage(string message)
         {
-            Console.WriteLine(string.Format("{0}: {1}", "LogCustom", message));
+            Console.WriteLine($"LogCustom: {message}");
         }
 
         public void LogVerboseInformation(string message)

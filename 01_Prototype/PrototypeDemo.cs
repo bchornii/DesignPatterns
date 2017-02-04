@@ -2,7 +2,7 @@
 
 namespace _01_Prototype
 {
-    class PrototypeDemo
+    public class PrototypeDemo
     {
         public static CalendarEvent GetExistingEvent()
         {

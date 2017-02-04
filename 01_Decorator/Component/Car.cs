@@ -2,7 +2,7 @@
 
 namespace _01_Decorator
 {
-    class Car
+    public class Car
     {
         protected string Brand { get; set; }
         public virtual void Go()

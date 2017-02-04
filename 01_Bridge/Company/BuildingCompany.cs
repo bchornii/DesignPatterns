@@ -2,9 +2,14 @@
 
 namespace _01_Bridge
 {
-    class BuildingCompany : IBuildingCompany
+    public class BuildingCompany : IBuildingCompany
     {
-        public IWallCreator WallCreator { get; set; }
+        public IWallCreator WallCreator { get; }
+
+        public BuildingCompany()
+        {
+            WallCreator = WallCreatorFactory.Instance.GetWallCreator();
+        }
 
         public void BuildingFondation()
         {

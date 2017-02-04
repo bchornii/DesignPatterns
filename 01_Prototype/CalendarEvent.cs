@@ -2,7 +2,7 @@
 
 namespace _01_Prototype
 {
-    class CalendarEvent : CalendarProptotype
+    public class CalendarEvent : CalendarProptotype
     {
         public Attendee[] Attendees { get; set; }
         public Priority Priority { get; set; }

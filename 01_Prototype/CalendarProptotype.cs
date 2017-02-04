@@ -2,7 +2,7 @@
 
 namespace _01_Prototype
 {
-    class CalendarProptotype : IClonable<CalendarProptotype>
+    public class CalendarProptotype : IClonable<CalendarProptotype>
     {
         public virtual CalendarProptotype Clone()
         {

@@ -6,7 +6,7 @@ namespace _02_Singlton_ThreadSafe
     {
         private int _logCount = 0;
         private static volatile Logger _loggerInstance;
-        private static object syncRoot = new object();
+        private static readonly object SyncRoot = new object();
         private Logger() { }
 
         public static Logger Instance
@@ -15,7 +15,7 @@ namespace _02_Singlton_ThreadSafe
             {
                 if (_loggerInstance == null)
                 {
-                    lock (syncRoot)
+                    lock (SyncRoot)
                     {
                         _loggerInstance = new Logger();
                     }

@@ -8,7 +8,7 @@ namespace _01_Adapter
 {
     // Адаптер назовні виглядає як нові євророзетки, шляхом наслідування
     // прийнятого в системі інтерфейсу
-    class Adapter : INewElectricitySystem
+    public class Adapter : INewElectricitySystem
     {
         // Але всередині він знає що коїлося в системі СРСР
         private readonly OldElectricitySystem _adaptee;

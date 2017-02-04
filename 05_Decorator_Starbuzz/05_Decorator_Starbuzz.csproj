@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beverage.cs" />
-    <Compile Include="CofeeSize.cs" />
-    <Compile Include="CondimentDecorator.cs" />
-    <Compile Include="Espresso.cs" />
-    <Compile Include="HouseBlend.cs" />
+    <Compile Include="Component\Beverage.cs" />
+    <Compile Include="Common\CofeeSize.cs" />
+    <Compile Include="Decorator\CondimentDecorator.cs" />
+    <Compile Include="Component\Espresso.cs" />
+    <Compile Include="Component\HouseBlend.cs" />
+    <Compile Include="Decorator\Milk.cs" />
+    <Compile Include="Decorator\Mocha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

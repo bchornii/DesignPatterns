@@ -2,13 +2,13 @@
 
 namespace _03_Decorator_GoF
 {
-    class ConcretteDecorator1 : Decorator
+    public class ConcretteDecorator1 : Decorator
     {
-        string addedState = "added state";
+        private readonly string _addedState = "added state";
         public override void Operation()
         {
             base.Operation();
-            Console.WriteLine(addedState);
+            Console.WriteLine(_addedState);
         }
     }
 }
