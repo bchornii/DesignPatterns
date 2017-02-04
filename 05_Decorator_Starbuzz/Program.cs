@@ -2,9 +2,9 @@
 
 namespace _05_Decorator_Starbuzz
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var espressoBeverage = new Espresso {Size = CofeeSize.Large};
             Console.WriteLine(espressoBeverage.Description);

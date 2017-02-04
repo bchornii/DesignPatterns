@@ -2,7 +2,7 @@
 
 namespace _02_Decorator_Coffe
 {
-    class Milk : CoffeDecorator
+    public class Milk : CoffeDecorator
     {
         public Milk(Coffe coffe) 
             : base(coffe)
