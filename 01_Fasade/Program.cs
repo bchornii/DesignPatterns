@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Fasade
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var facade = new SkiResortFacade();
+            Console.WriteLine($"One day ticket price = {facade.HaveRestWithOwnSkis()}");
+            Console.WriteLine($"Rest price = {facade.HaveGoodRest(90, 180, 42, 5, 5)}");
+
+            Console.Read();
         }
     }
 }
