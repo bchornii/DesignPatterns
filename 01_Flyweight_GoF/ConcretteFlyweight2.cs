@@ -2,10 +2,10 @@
 {
     public class ConcretteFlyweight2 : Flyweight
     {
-        int allState;
+        private int _allState;
         public override void Operation(int extrinsicState)
         {
-            allState = extrinsicState;
+            _allState = extrinsicState;
         }
     }
 }

@@ -143,6 +143,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Visitor_office", "01_Vis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Prototype_Maze", "02_Prototype_Maze\02_Prototype_Maze.csproj", "{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Flyweight_Character", "03_Flyweight_Character\03_Flyweight_Character.csproj", "{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -337,6 +339,10 @@ Global
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,5 +396,6 @@ Global
 		{994E8CC2-E4B3-4F71-B509-3FAB5A84DCE3} = {70B55EB0-B770-420A-B81C-F872A4CEBCCD}
 		{52AE49E8-D6BB-4E42-B95A-7BF464DA68F2} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3} = {445742AB-54D0-4053-924B-F4790E5F01F1}
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762} = {41588A2E-A8F5-4438-AFF2-402FFBFD23B7}
 	EndGlobalSection
 EndGlobal
