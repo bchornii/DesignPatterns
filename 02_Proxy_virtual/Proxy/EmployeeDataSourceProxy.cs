@@ -31,7 +31,7 @@ namespace _02_Proxy_virtual
         public void SetEmployeeInfo(EmployeeInfo employeeInfo)
         {
             _dataSource.SetEmployeeInfo(employeeInfo);
-            _cache.AddOrUpdate(employeeInfo.Id, employeeInfo, (k, v) => employeeInfo);
+            _cache.AddOrUpdate(employeeInfo.Id, employeeInfo, (key, value) => employeeInfo);
         }
     }
 }

@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Flyweight\Character.cs" />
+    <Compile Include="ConcretteFlyweight\CharacterA.cs" />
+    <Compile Include="ConcretteFlyweight\CharacterB.cs" />
+    <Compile Include="FlyweightFactory\CharacterFactory.cs" />
+    <Compile Include="ConcretteFlyweight\CharacterZ.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
