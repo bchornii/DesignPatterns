@@ -5,7 +5,7 @@ namespace _02_Flyweight_Map
 {
     public class MapComposite : MapComponent, IMapComposite
     {
-        private List<ComponentContainer> _components = new List<ComponentContainer>();
+        private readonly List<ComponentContainer> _components = new List<ComponentContainer>();
         public void AddComponent(IMapComponent component, int x, int y)
         {
             var container = new ComponentContainer

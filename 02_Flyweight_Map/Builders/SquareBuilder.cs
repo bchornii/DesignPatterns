@@ -3,8 +3,9 @@
     public abstract class SquareBuilder : IMapBuilder
     {
         public IMapComposite Component { get; protected set; }
-        protected MapComponentFactory MapFactory { get; private set; }
-        public SquareBuilder(MapComponentFactory factory, string title)             
+        protected FlyweightComponentFactory MapFactory { get; private set; }
+
+        protected SquareBuilder(FlyweightComponentFactory factory, string title)             
         {
             Component = new MapComposite { Title = title };
             MapFactory = factory;
@@ -15,7 +16,7 @@
 
     public class ParkBuilder : SquareBuilder
     {
-        public ParkBuilder(MapComponentFactory factory, string title) : 
+        public ParkBuilder(FlyweightComponentFactory factory, string title) : 
             base(factory, title) { }
 
         public override SquareBuilder BuildAspenTree(int x, int y)

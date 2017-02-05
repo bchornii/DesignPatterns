@@ -3,7 +3,8 @@
     public abstract class DistrictBuilder : IMapBuilder
     {
         public IMapComposite Component { get; protected set; }
-        public DistrictBuilder(string title)
+
+        protected DistrictBuilder(string title)
         {
             Component = new MapComposite { Title = title };
         }

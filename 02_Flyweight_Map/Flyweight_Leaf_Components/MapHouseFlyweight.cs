@@ -2,7 +2,7 @@
 
 namespace _02_Flyweight_Map
 {
-    public class MapHouse : MapComponent
+    public class MapHouseFlyweight : MapComponent
     {
         public override void Draw(int x, int y)
         {
