@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BestFriend.cs" />
-    <Compile Include="CafeVisitor.cs" />
-    <Compile Include="Food.cs" />
-    <Compile Include="GirlFriend.cs" />
+    <Compile Include="Common\ApprovalResponse.cs" />
+    <Compile Include="Chain handler\ExpenceHandler.cs" />
+    <Compile Include="Common\ConsoleInput.cs" />
+    <Compile Include="Common\Employee.cs" />
+    <Compile Include="Chain handler\EndOfChainExpenseHandler.cs" />
+    <Compile Include="Common\ExpenseReport.cs" />
+    <Compile Include="Common\IExpenceReport.cs" />
+    <Compile Include="Common\IExpenseApprover.cs" />
+    <Compile Include="Chain handler\IExpenseHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
