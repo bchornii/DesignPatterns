@@ -2,7 +2,7 @@
 
 namespace _03_ChainOfResponsibility_Bank
 {
-    class Cashier : IRequestHandler
+    public class Cashier : IRequestHandler
     {
         public string Name { get; set; }
         public IRequestHandler Successor { get; set; }

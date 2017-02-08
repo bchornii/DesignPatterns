@@ -2,7 +2,7 @@
 
 namespace _03_ChainOfResponsibility_Bank
 {
-    class Manager : IRequestHandler
+    public class Manager : IRequestHandler
     {
         public string Name { get; set; }
         public IRequestHandler Successor { get; set; }

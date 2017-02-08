@@ -2,7 +2,7 @@
 
 namespace _03_ChainOfResponsibility_Bank
 {
-    static class RequestHandlerExtension
+    public static class RequestHandlerExtension
     {
         public static void TrySuccessor(this IRequestHandler handler, LoanRequest req)
         {

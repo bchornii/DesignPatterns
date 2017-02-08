@@ -4,7 +4,7 @@
     {
         public ReviewResult ReviewDocument(Document document)
         {
-            ReviewResult result = new ReviewResult
+            var result = new ReviewResult
             {
                 Reviewer = GetType().Name,
                 Approved = true
