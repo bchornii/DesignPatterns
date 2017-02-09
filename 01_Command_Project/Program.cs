@@ -6,7 +6,12 @@ namespace _01_Command_Project
     {
         private static void Main()
         {
-            
+            var command = new ConcretteCommand(new Receiver());
+            var invoker = new Invoker();
+
+            invoker.SetCommand(command);
+            invoker.ExecuteCommand();
+
             Console.Read();
         }
     }

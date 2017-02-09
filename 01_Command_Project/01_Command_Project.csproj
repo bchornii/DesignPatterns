@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\ConcretteCommand.cs" />
+    <Compile Include="Invoker\Invoker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receiver\Receiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
