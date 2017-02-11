@@ -15,9 +15,9 @@ namespace _02_Command_Order
 
             //remoteControll.SetCommand(lightOnCmd);
             //remoteControll.ButtonWasPressed();
-
             //remoteControll.SetCommand(garageDoorOpenCmd);
             //remoteControll.ButtonWasPressed();
+
             Console.WriteLine(new string('-', 80));
             Console.WriteLine("Light control commands example :\n");
 

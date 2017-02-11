@@ -102,6 +102,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_TemplateMethod_MessSearch", "02_TemplateMethod_MessSearch\02_TemplateMethod_MessSearch.csproj", "{8BFC87BD-9F3C-4324-9610-6B975C5E87F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16_Iterator", "16_Iterator", "{2D741D2F-0C16-4726-A06B-6979429140DE}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Iterator_Dinner", "01_Iterator_Dinner\01_Iterator_Dinner.csproj", "{BFE2CF34-4F9F-45C5-AB8E-DDA7F141C58B}"
 EndProject
@@ -142,6 +145,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Visitor_office", "01_Visitor_office\01_Visitor_office.csproj", "{52AE49E8-D6BB-4E42-B95A-7BF464DA68F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Prototype_Maze", "02_Prototype_Maze\02_Prototype_Maze.csproj", "{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Flyweight_Character", "03_Flyweight_Character\03_Flyweight_Character.csproj", "{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Proxy_Virtual", "03_Proxy_Virtual\03_Proxy_Virtual.csproj", "{1F313C1C-28C9-4928-839E-027C50AE897C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Iterator_Internal", "02_Iterator_Internal\02_Iterator_Internal.csproj", "{33CA77E0-D50A-4312-8518-BACB87FC619B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -337,6 +346,18 @@ Global
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F313C1C-28C9-4928-839E-027C50AE897C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F313C1C-28C9-4928-839E-027C50AE897C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F313C1C-28C9-4928-839E-027C50AE897C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F313C1C-28C9-4928-839E-027C50AE897C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CA77E0-D50A-4312-8518-BACB87FC619B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CA77E0-D50A-4312-8518-BACB87FC619B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CA77E0-D50A-4312-8518-BACB87FC619B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CA77E0-D50A-4312-8518-BACB87FC619B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,5 +411,8 @@ Global
 		{994E8CC2-E4B3-4F71-B509-3FAB5A84DCE3} = {70B55EB0-B770-420A-B81C-F872A4CEBCCD}
 		{52AE49E8-D6BB-4E42-B95A-7BF464DA68F2} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
 		{BCDAFDD8-6687-4F58-A679-A96F4948FEA3} = {445742AB-54D0-4053-924B-F4790E5F01F1}
+		{AC4AD028-C66B-4DAB-88D7-C7C8E78C9762} = {41588A2E-A8F5-4438-AFF2-402FFBFD23B7}
+		{1F313C1C-28C9-4928-839E-027C50AE897C} = {FEA5BEC6-2908-409B-9C98-3BAAC5EDB5CA}
+		{33CA77E0-D50A-4312-8518-BACB87FC619B} = {2D741D2F-0C16-4726-A06B-6979429140DE}
 	EndGlobalSection
 EndGlobal

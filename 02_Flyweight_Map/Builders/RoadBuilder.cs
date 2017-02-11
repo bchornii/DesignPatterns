@@ -3,8 +3,9 @@
     public abstract class RoadBuilder : IMapBuilder
     {
         public IMapComposite Component { get; protected set; }
-        protected MapComponentFactory MapFactory { get; private set; }
-        public RoadBuilder(MapComponentFactory factory, string title)             
+        protected FlyweightComponentFactory MapFactory { get; private set; }
+
+        protected RoadBuilder(FlyweightComponentFactory factory, string title)             
         {
             Component = new MapComposite { Title = title };
             MapFactory = factory;
@@ -16,7 +17,7 @@
 
     public class HighwayBuilder : RoadBuilder
     {
-        public HighwayBuilder(MapComponentFactory factory, string title) : 
+        public HighwayBuilder(FlyweightComponentFactory factory, string title) : 
             base(factory, title) { }
 
         public override RoadBuilder BuildDirect(int x, int y)

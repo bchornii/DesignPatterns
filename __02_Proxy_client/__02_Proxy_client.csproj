@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualPricesProxy.cs" />
-    <Compile Include="IActualPrices.cs" />
+    <Compile Include="Proxy\ActualPricesProxy.cs" />
+    <Compile Include="Proxy\IActualPrices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace _02_ChainOfResponsibility_Document
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            List<Document> documents = new List<Document>
+            var documents = new List<Document>
             {
                 new Document { Id = 1, Content = new string('-',50)},
                 new Document { Id = 2, Content = new string('-',860) },

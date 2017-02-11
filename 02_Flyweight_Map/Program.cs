@@ -2,9 +2,25 @@
 
 namespace _02_Flyweight_Map
 {
-    class Program
+    // In this example we use flyweights like components of composite
+
+    // FlyweightFactory is responsible for creating/caching components(flyweights) and
+    // use LazyConcurrentDictionary under the hood for storing them
+
+    // For building composite we use builders 
+    // RoadBuilder(HighwayBuilder) is used for build 'road' element which consists 'MapRoadFlyweight'
+    // flyweight components of composite
+    // SquareBuilder(ParkBuilder) is used for build 'park' element which consists 'MapTreeFlyweight'
+    // flyweight components of composite
+    // BuildingBuilder(HouseBuilder) is used for build 'houses' element from 'MapHouseFlyweight'
+    // flyweight components of composite
+    // DistrictBuilder(SmallDistrictBuilder) is used for build 'district' which consists houses, parks and roads
+    // CityBuilder(SmallCityBuilder) is used for build 'city' which consists of districts
+
+
+    internal class Program
     {
-        public static IMapComponent BuildCity(MapComponentFactory factory)
+        public static IMapComponent BuildCity(FlyweightComponentFactory factory)
         {
             var road = new HighwayBuilder(factory, "Main Street")
                           .BuildDirect(0, 2)
@@ -47,9 +63,9 @@ namespace _02_Flyweight_Map
             Console.WriteLine("==============\n");
         }
 
-        static void Main(string[] args)
+        private static void Main()
         {
-            IMapComponent city = BuildCity(MapComponentFactory.Instance);
+            IMapComponent city = BuildCity(FlyweightComponentFactory.Instance);
             DrawArea(city);
 
             IMapComponent road = city.FindChild("Main Street");
@@ -58,8 +74,8 @@ namespace _02_Flyweight_Map
             IMapComponent house = city.FindChild("City Park");
             DrawArea(house);
 
-            Console.WriteLine($"Total trees instances : {MapComponentFactory.Instance.TotalTrees}");
-            Console.WriteLine($"Total roads instances : {MapComponentFactory.Instance.TotalRoads}");
+            Console.WriteLine($"Total trees instances : {FlyweightComponentFactory.Instance.TotalTrees}");
+            Console.WriteLine($"Total roads instances : {FlyweightComponentFactory.Instance.TotalRoads}");
 
             Console.Read();
         }

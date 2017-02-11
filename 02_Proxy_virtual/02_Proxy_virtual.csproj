@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSourceFactory.cs" />
-    <Compile Include="EmployeeDataSource.cs" />
-    <Compile Include="EmployeeDataSourceProxy.cs" />
-    <Compile Include="EmployeeInfo.cs" />
-    <Compile Include="IEmployeeDataSource.cs" />
+    <Compile Include="Common\DataSourceFactory.cs" />
+    <Compile Include="Subject\EmployeeDataSource.cs" />
+    <Compile Include="Proxy\EmployeeDataSourceProxy.cs" />
+    <Compile Include="Common\EmployeeInfo.cs" />
+    <Compile Include="Subject\IEmployeeDataSource.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

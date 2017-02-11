@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DinnerMenu.cs" />
-    <Compile Include="DinnerMenuIterator.cs" />
-    <Compile Include="IIteratable.cs" />
-    <Compile Include="IIterator.cs" />
-    <Compile Include="MenuItem.cs" />
-    <Compile Include="PancakeHouseIterator.cs" />
-    <Compile Include="PancakeHouseMenu.cs" />
+    <Compile Include="Aggregate\DinnerMenu.cs" />
+    <Compile Include="Iterator\DinnerMenuIterator.cs" />
+    <Compile Include="Iterator\IIteratable.cs" />
+    <Compile Include="Iterator\IIterator.cs" />
+    <Compile Include="Aggregate\Elements\MenuItem.cs" />
+    <Compile Include="Iterator\PancakeHouseIterator.cs" />
+    <Compile Include="Aggregate\PancakeHouseMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Waitress.cs" />

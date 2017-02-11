@@ -2,14 +2,14 @@
 
 namespace _01_Flyweight_GoF
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            int initialState = 0;
+            var initialState = 0;
 
             Flyweight flyweight = null;
-            FlyweightFactory factory = new FlyweightFactory();
+            var factory = new FlyweightFactory();
 
             flyweight = factory.GetFlyweight("1");
             flyweight.Operation(initialState);

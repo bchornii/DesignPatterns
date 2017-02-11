@@ -1,25 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace _01_ChainOfResponsibility
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            var capuccino1 = new Food { Name = "Capuccino", Ingridients = new List<string> { "Coffe", "Milr", "Sugar" } };
-            var capuccino2 = new Food { Name = "Capuccino", Ingridients = new List<string> { "Coffe", "Milr" } };
+            var william = new ExpenceHandler(new Employee("William Worker", decimal.Zero));
+            var mary = new ExpenceHandler(new Employee("Mary Manager", new decimal(1000)));
+            var victor = new ExpenceHandler(new Employee("Victor Vicepres", new decimal(5000)));
+            var paula = new ExpenceHandler(new Employee("Paula President", new decimal(20000)));
 
-            var soup1 = new Food { Name = "Soap with meat", Ingridients = new List<string> { "Meat", "Water" } };
-            var meat = new Food { Name = "Meat", Ingridients = new List<string> { "Meat" } };
+            william.RegisterNext(mary);
+            mary.RegisterNext(victor);
+            victor.RegisterNext(paula);
 
-            var girlFriend = new GirlFriend(null);
-            var bestFriend = new BestFriend(girlFriend);
-
-            bestFriend.HandleFood(capuccino1);
-            bestFriend.HandleFood(meat);
-            bestFriend.HandleFood(capuccino2);
-            bestFriend.HandleFood(soup1);
+            decimal expenceReportAmount;
+            while (ConsoleInput.TryReadDecimal("Expence report amount: ", out expenceReportAmount))
+            {
+                IExpenseReport expense = new ExpenseReport(expenceReportAmount);
+                ApprovalResponse response = william.Approve(expense);
+                Console.WriteLine($"The request was {response}");
+            }
 
             Console.ReadLine();
         }

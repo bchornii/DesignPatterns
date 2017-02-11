@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03_ChainOfResponsibility_Bank
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             // Customers
             var req1 = new LoanRequest { Customer = "John Tanta", Amount = 800 };
