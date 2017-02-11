@@ -6,11 +6,6 @@ namespace _01_Mediator_brain
     {
         public Ear Ear { get; private set; }
         public Face Face { get; private set; }
-        public Brain()
-        {
-            Ear = new Ear(this);
-            Face = new Face(this);
-        }
 
         public void SomethingHappendToBodyPart(BodyPart bodyPart)
         {

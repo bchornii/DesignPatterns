@@ -7,7 +7,10 @@ namespace _01_Mediator_brain
         private static void Main()
         {
             var brain = new Brain();
-            brain.Ear.HearSomething();
+            var ear = new Ear(brain);
+            var face = new Face(brain);
+
+            ear.HearSomething();
 
             Console.Read();
         }
