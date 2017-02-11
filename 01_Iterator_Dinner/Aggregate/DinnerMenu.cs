@@ -8,6 +8,9 @@ namespace _01_Iterator_Dinner
         private int _numberOfItems = 0;
         private readonly MenuItem[] _menuItems;
 
+        public MenuItem this[int index] => _menuItems[index];
+        public int Length => _menuItems.Length;
+
         public DinnerMenu()
         {
             _menuItems = new MenuItem[maxItems];
@@ -36,7 +39,7 @@ namespace _01_Iterator_Dinner
 
         public IIterator GetIterator()
         {
-            return new DinnerMenuIterator(_menuItems);
+            return new DinnerMenuIterator(this);
         }
     }
 }

@@ -6,6 +6,9 @@ namespace _01_Iterator_Dinner
     {
         private readonly ArrayList _menuItems;
 
+        public object this[int index] => _menuItems[index];
+        public int Count => _menuItems.Count;
+
         public PancakeHouseMenu()
         {
             _menuItems = new ArrayList();
@@ -26,7 +29,7 @@ namespace _01_Iterator_Dinner
 
         public IIterator GetIterator()
         {
-            return new PancakeHouseIterator(_menuItems);
+            return new PancakeHouseIterator(this);
         }
     }
 }
