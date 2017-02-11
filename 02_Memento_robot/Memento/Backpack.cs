@@ -1,6 +1,6 @@
 ﻿namespace _02_Memento_robot
 {
-    public class Backpack : IBackpackWideInterface<string>
+    public class Backpack : IMementoWideInterface<string>
     {
         private string _state;
 

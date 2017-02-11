@@ -2,6 +2,6 @@
 {
     public class Robot
     {
-        public IBackpackNarrowInterface Backpack { get; set; }
+        public IMementoNarrowInterface Backpack { get; set; }
     }
 }
