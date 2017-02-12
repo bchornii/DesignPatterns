@@ -6,8 +6,10 @@ namespace _01_Strategy_weather
     {
         private static void Main()
         {
-            var me = new MySelf();
-            me.ChangeStrategy(new RainingWeather());
+            var me = new MySelf
+            {
+                Strategy = new RainingWeather()
+            };
             me.GoOutside();
 
             Console.Read();
