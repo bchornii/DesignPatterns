@@ -114,7 +114,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20_State", "20_State", "{28
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_State_Gummball", "01_State_Gummball\01_State_Gummball.csproj", "{8E6F270F-AA8D-405B-901C-A0EF6036B0A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_State_Order", "_02_State_Order\_02_State_Order.csproj", "{D30FF778-02BC-419F-80F6-097EAD0DB9B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_State_Order", "_02_State_Order\02_State_Order.csproj", "{D30FF778-02BC-419F-80F6-097EAD0DB9B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Proxy_virtual", "02_Proxy_virtual\02_Proxy_virtual.csproj", "{758C417F-9BD5-4279-B6FD-29E15F6D2B91}"
 EndProject
