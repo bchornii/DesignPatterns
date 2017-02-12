@@ -160,6 +160,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Observer_Clock", "03_Obs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Observer_IObservable", "04_Observer_IObservable\04_Observer_IObservable.csproj", "{599BF15E-CF8B-419E-829D-9DEEA2A5D128}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Strategy_sorting", "02_Strategy_basic\02_Strategy_sorting.csproj", "{A68AAD61-2185-435F-8C00-14DBF12E0628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -382,6 +384,10 @@ Global
 		{599BF15E-CF8B-419E-829D-9DEEA2A5D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{599BF15E-CF8B-419E-829D-9DEEA2A5D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{599BF15E-CF8B-419E-829D-9DEEA2A5D128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68AAD61-2185-435F-8C00-14DBF12E0628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68AAD61-2185-435F-8C00-14DBF12E0628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68AAD61-2185-435F-8C00-14DBF12E0628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68AAD61-2185-435F-8C00-14DBF12E0628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,5 +448,6 @@ Global
 		{8B1EB06F-A1BF-4035-8694-37C52325E655} = {4C874AF2-27DF-452E-A8C2-0AB60253BC23}
 		{90AD4C2E-BF6B-4305-B813-D10D8BE9AF61} = {4C874AF2-27DF-452E-A8C2-0AB60253BC23}
 		{599BF15E-CF8B-419E-829D-9DEEA2A5D128} = {4C874AF2-27DF-452E-A8C2-0AB60253BC23}
+		{A68AAD61-2185-435F-8C00-14DBF12E0628} = {E1FC7D3E-8AD5-4524-A7C5-B12B33BD5AC8}
 	EndGlobalSection
 EndGlobal
