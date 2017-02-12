@@ -15,7 +15,7 @@ namespace _01_State_Gummball
         {
             SoldOutState = new SoldOutState(this);
             NoQuarterState = new NoQuarterState(this);
-            HasQuarterState = new HasNoQuarterState(this);
+            HasQuarterState = new HasQuarterState(this);
             SoldState = new SoldState(this);
             if (numberGumballs > 0)
             {
