@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_State_Gummball
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var machine = new GumballMachine(5);
+            machine.InsertQuarter();
+            machine.TurnCrank();
+
+            Console.Read();
         }
     }
 }

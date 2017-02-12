@@ -43,14 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Airbus.cs" />
-    <Compile Include="Aircraft.cs" />
-    <Compile Include="Boeing.cs" />
-    <Compile Include="Fokker.cs" />
-    <Compile Include="IAirTrafficControl.cs" />
+    <Compile Include="Collegues\Airbus.cs" />
+    <Compile Include="Collegues\Aircraft.cs" />
+    <Compile Include="Collegues\Boeing.cs" />
+    <Compile Include="Collegues\Fokker.cs" />
+    <Compile Include="Mediator\IAirTrafficControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tower.cs" />
+    <Compile Include="Mediator\Tower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

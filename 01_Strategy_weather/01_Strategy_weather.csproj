@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IWeatherStrategy.cs" />
-    <Compile Include="MySelf.cs" />
+    <Compile Include="Strategy\IWeatherStrategy.cs" />
+    <Compile Include="Context\MySelf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RainingWeather.cs" />
-    <Compile Include="SunshineWeather.cs" />
+    <Compile Include="Strategy\RainingWeather.cs" />
+    <Compile Include="Strategy\SunshineWeather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

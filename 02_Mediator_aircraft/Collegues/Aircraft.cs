@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom;
 
 namespace _02_Mediator_aircraft
 {

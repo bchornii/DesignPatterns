@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backpack.cs" />
-    <Compile Include="IBackpackInterface.cs" />
-    <Compile Include="Man.cs" />
+    <Compile Include="Memento\Backpack.cs" />
+    <Compile Include="Memento\IMementoNarrowInterface.cs" />
+    <Compile Include="Memento\IMementoWideInterface.cs" />
+    <Compile Include="Originator\Man.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Robot.cs" />
+    <Compile Include="Caretaker\Robot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
