@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImportantMessageSearcher.cs" />
-    <Compile Include="MessageSearcher.cs" />
+    <Compile Include="TemplateMethod\ImportantMessageSearcher.cs" />
+    <Compile Include="TemplateMethod\MessageSearcher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UselessMessageSearcher.cs" />
+    <Compile Include="TemplateMethod\UselessMessageSearcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
