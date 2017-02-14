@@ -16,7 +16,7 @@ namespace _01_Visitor_office
 
         public void Accept(IVisitor visitor)
         {
-            visitor.Visit(this);
+            visitor.VisitOffice(this);
             foreach (var floor in _floors)
             {
                 floor.Accept(visitor);

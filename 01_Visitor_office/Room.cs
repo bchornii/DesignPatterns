@@ -10,7 +10,7 @@ namespace _01_Visitor_office
         }
         public void Accept(IVisitor visitor)
         {
-            visitor.Visit(this);
+            visitor.VisitRoom(this);
         }
     }
 }

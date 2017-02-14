@@ -2,8 +2,8 @@
 {
     public interface IVisitor
     {
-        void Visit(OfficeBuilding building);
-        void Visit(Floor floor);
-        void Visit(Room room);        
+        void VisitOffice(OfficeBuilding building);
+        void VisitFloor(Floor floor);
+        void VisitRoom(Room room);        
     }
 }

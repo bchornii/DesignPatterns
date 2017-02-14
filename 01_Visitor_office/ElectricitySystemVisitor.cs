@@ -4,18 +4,18 @@ namespace _01_Visitor_office
 {
     public class ElectricitySystemVisitor : IVisitor
     {
-        public void Visit(OfficeBuilding building)
+        public void VisitOffice(OfficeBuilding building)
         {
             var state = building.ElectricitySystemId > 1000 ? "Good" : "Bad";
             Console.WriteLine($"Main electric shield in building {building.BuildingName} is in {state} state.");
         }
 
-        public void Visit(Floor floor)
+        public void VisitFloor(Floor floor)
         {
             Console.WriteLine($"Diagnostic electricity on floor {floor.FloorNumber}.");
         }
 
-        public void Visit(Room room)
+        public void VisitRoom(Room room)
         {
             Console.WriteLine($"Diagnostic electricity in room {room.RoomNumber}.");
         }
