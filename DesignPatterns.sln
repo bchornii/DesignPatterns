@@ -170,6 +170,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Visitor_bank", "03_Visit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Visitor_Equipment", "04_Visitor_Equipment\04_Visitor_Equipment.csproj", "{245CE230-D90E-4697-A619-2FBD464D2BBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Visitor_DoubleDispatch", "05_Visitor_DoubleDispatch\05_Visitor_DoubleDispatch.csproj", "{4985A9BF-7460-4277-A4BD-6337C2366272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -412,6 +414,10 @@ Global
 		{245CE230-D90E-4697-A619-2FBD464D2BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245CE230-D90E-4697-A619-2FBD464D2BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245CE230-D90E-4697-A619-2FBD464D2BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4985A9BF-7460-4277-A4BD-6337C2366272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4985A9BF-7460-4277-A4BD-6337C2366272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4985A9BF-7460-4277-A4BD-6337C2366272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4985A9BF-7460-4277-A4BD-6337C2366272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -477,5 +483,6 @@ Global
 		{9D67DF75-E823-40E0-8853-CD209A91A647} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
 		{D6E9FEC9-8DE0-4F6F-8D9B-91A8DA7E6921} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
 		{245CE230-D90E-4697-A619-2FBD464D2BBF} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
+		{4985A9BF-7460-4277-A4BD-6337C2366272} = {37E31827-5C14-4E32-8135-F417D1B3EF36}
 	EndGlobalSection
 EndGlobal
