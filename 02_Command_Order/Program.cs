@@ -23,7 +23,8 @@ namespace _02_Command_Order
 
             var remoteControll = new RemoteControll();
             var light = new Light();
-            remoteControll.SetCommand(Slots.First, new LightOnCommand(light), new LightOffCommand(light));            
+            remoteControll.SetCommand(Slots.First, new LightOnCommand(light), 
+                new LightOffCommand(light));            
 
             remoteControll.OnButtonWasPushed(Slots.First);
             remoteControll.OffButtonWasPushed(Slots.First);            
