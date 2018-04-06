@@ -15,8 +15,7 @@ namespace _01_ChainOfResponsibility
             mary.RegisterNext(victor);
             victor.RegisterNext(paula);
 
-            decimal expenceReportAmount;
-            while (ConsoleInput.TryReadDecimal("Expence report amount: ", out expenceReportAmount))
+            while (ConsoleInput.TryReadDecimal("Expence report amount: ", out var expenceReportAmount))
             {
                 IExpenseReport expense = new ExpenseReport(expenceReportAmount);
                 ApprovalResponse response = william.Approve(expense);
