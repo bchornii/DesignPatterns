@@ -1,6 +1,7 @@
 ﻿using System;
+using _01_Visitor_office.Elements;
 
-namespace _01_Visitor_office
+namespace _01_Visitor_office.Visitor
 {
     public class ElectricitySystemVisitor : IVisitor
     {

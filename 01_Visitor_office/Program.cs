@@ -1,4 +1,6 @@
 ﻿using System;
+using _01_Visitor_office.Elements;
+using _01_Visitor_office.Visitor;
 
 namespace _01_Visitor_office
 {
@@ -16,7 +18,11 @@ namespace _01_Visitor_office
             floor2.AddRoom(new Room(202));
             floor2.AddRoom(new Room(204));
 
-            var office = new OfficeBuilding {BuildingName = "[Dessign pattern center]", ElectricitySystemId = 900};
+            var office = new OfficeBuilding
+            {
+                BuildingName = "[Dessign pattern center]",
+                ElectricitySystemId = 900
+            };
             office.AddFloor(floor1);
             office.AddFloor(floor2);
 

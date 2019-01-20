@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using _01_Visitor_office.Visitor;
 
-namespace _01_Visitor_office
+namespace _01_Visitor_office.Elements
 {
     public class OfficeBuilding : IElement
     {
